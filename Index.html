@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Clicker</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
+    <div class="game-container">
         <h1>Cookie Clicker</h1>
-        <div id="counter">Cookies: 0</div>
-        <div id="cookies-per-second">Cookies per second: 0</div>
-        <img id="cookie" src="assets/cookie.png" alt="Cookie">
+        <div class="counter">Cookies: 0</div>
+        <div class="cps">Per Second: 0</div>
         
-        <h2>Upgrades</h2>
-        <div id="upgrades-container"></div>
+        <!-- Canvas element for dynamic cookie -->
+        <canvas class="cookie-canvas" width="200" height="200"></canvas>
         
-        <div class="buttons">
-            <button id="save-btn">Save Game</button>
-            <button id="reset-btn">Reset Game</button>
-        </div>
+        <div class="upgrades"></div>
+        <button class="save">Save</button>
+        <button class="reset">Reset</button>
     </div>
-
-    <script src="script.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
