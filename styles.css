@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5e6c8;
+    margin: 0;
+    padding: 20px;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff9e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#cookie {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    margin: 20px 0;
+}
+
+#cookie:active {
+    transform: scale(0.95);
+}
+
+#counter {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#cookies-per-second {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.upgrade {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upgrade button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upgrade button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.upgrade-info {
+    text-align: left;
+}
+
+.upgrade-name {
+    font-weight: bold;
+}
+
+.upgrade-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
